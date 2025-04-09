@@ -69,7 +69,7 @@ nav, .header-bottom{
 
 .header-title{
     margin: auto;
-    padding: 10rem;
+    padding: 14rem;
     text-align: center;
     color: white;
     font-size: 5rem;
@@ -94,4 +94,53 @@ nav, .header-bottom{
     justify-content: space-between;
     allign-items: center;
     color: white;
+}
+
+.social-media a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+a:visited{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.game-container{
+    background-color: rgb(84, 84, 72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: space-between;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.game img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.info{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(18, 17, 17);
+    color: white;
+    padding: 2rem;
+    text-align: center;
 }
