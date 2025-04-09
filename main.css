@@ -116,6 +116,7 @@ a:visited{
     font-size: 1rem;
 }
 
+/* game list section */
 #about{
     background-size: cover;
     background-color: rgb(84, 84, 72);
@@ -135,6 +136,8 @@ a:visited{
 }
 
 .game{
+    width: 320px; 
+    height: 400px;
     background-color: rgb(0, 0, 0);
     padding: 2rem;
     border-radius: 10px;
@@ -148,7 +151,7 @@ a:visited{
 .game img{
     width: 300px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
 }
@@ -162,10 +165,14 @@ a:visited{
     align-items: center;
     text-align: center;
 }
+.game h2, .game p {
+    margin: 0.5rem 0;
+}
 
+/* footer */
 footer{
     background-color: rgb(18, 17, 17);
     color: white;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
 }
