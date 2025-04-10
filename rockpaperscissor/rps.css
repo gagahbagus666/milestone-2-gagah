@@ -78,3 +78,11 @@ apps{
     background-color: rgb(109, 41, 41);
     transform: scale(1.05);
 }
+
+/* footer */
+footer{
+    background-color: rgb(18, 17, 17);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
