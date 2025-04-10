@@ -5,16 +5,18 @@
 :root{
     box-sizing: border-box;
 }
+
 html, body, *{
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 
-/* body{
+body{
     background-color:rgb(0, 0, 0);
     font-family: 'Arial', sans-serif;
-} */
+}
 
 .logo{
     display: flex;
@@ -23,6 +25,13 @@ html, body, *{
     padding: 2rem;
     position: relative;
 }
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
 apps{
     height: 100vh;
     justify-content: center;
@@ -30,20 +39,27 @@ apps{
 }
 
 .summary{
+    justify-content: center;
+    align-item: center;
+    flex-direction: collumn;
     margin: 0 auto;
     border: 3px solid red;
     width: 400px;
-    height: 400px;
+    height: 200px;
     text-align: center;
     padding: 20px;
 }
 
+summary #in-game{
+    display: flex;
+}
 .title{
     text-align: center;
 }
 
 .games {
     display: flex;
+    padding: 50px;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -77,6 +93,24 @@ apps{
     cursor: pointer;
     background-color: rgb(109, 41, 41);
     transform: scale(1.05);
+}
+
+/* instruction */
+
+.instrucion ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 20px; 
+}
+
+.instrucion li {
+    margin-bottom: 10px;
+}
+
+.instruction{
+    margin: 0 auto;
+    border: 3px solid red;
+    padding: 20px;
 }
 
 /* footer */
