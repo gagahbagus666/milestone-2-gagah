@@ -1,6 +1,8 @@
+let start = null;
+
 class Start {
     constructor() {
-        this.playerName = "You";
+        this.playerName = "player-name";
         this.botName = "Dark Entity";
         this.playerOption = null;
         this.botOption = null;
@@ -31,13 +33,26 @@ class Start {
     }
 }
 
+function login(){
+    const playerName = localStorage.getItem("playerName");
+    if (playerName) {
+        const start = new Start();
+        start.playerName = playerName;
+        document.getElementById("player-name").textContent = `Welcome, ${start.playerName}!`;
+        return start;
+    } else {
+        alert("You must enter a name to play!");
+        return null;
+    }
+}
+
 function pickOption(gesture) {
-    const start = new Start();
+    const start = login();
+    if (!start) return;
+
     start.setPlayerOption = gesture;
     start.botBrain();
-    console.log(`Player chose: ${start.getPlayerOption}`);
-    console.log(`Dark Entity chose: ${start.getBotOption}`);
-    console.log("Winner:", start.winner);
+
 
     if (start.getPlayerOption === start.getBotOption) {
         start.winner = "Draw is Not an Option!";
@@ -51,11 +66,11 @@ function pickOption(gesture) {
         start.winner = "Your Soul is Mine!";
     }
 
-    
+
         const inGame = document.getElementById("in-game");
         const result = document.getElementById("result");
 
-        inGame.textContent = "Dark Entity Scan Your Thought"
+        inGame.textContent = "Dark Entity Scaning Your Thought"
 
 setTimeout(() => {
         inGame.innerHTML = `${start.playerName} chose: ${start.getPlayerOption} <br> 

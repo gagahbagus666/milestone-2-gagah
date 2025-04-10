@@ -50,6 +50,10 @@ apps{
     padding: 20px;
 }
 
+#in-game{
+    color: red;
+}
+
 summary #in-game{
     display: flex;
 }
