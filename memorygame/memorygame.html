@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../memorygame/memory.css">
+    <script src="../memorygame/memory.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- header -->
+    <header>
+        <h1 class="logo">
+            <a href="../main.html">
+                <img src="../assets/mainlogo.png" alt="main logo">
+            </a>
+        </h1>
+        <div id="player-name" class="name">Welcome, Earthrealm!</div>
+    </header>
+    <!-- card game -->
+    <div class="container">
+        <h1 class="title">Memory Game</h1>
+        <div class="box-game">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/bat.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/bat.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/castle2.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/castle2.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/ghost.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/ghost.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/heart.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/heart.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/moth.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/moth.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/queenlich.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/queenlich.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/reaper.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/reaper.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/skull.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front"><img src="../memorygame/memoryassets/back.png" alt=""></div>
+                    <div class="card-back"><img src="../memorygame/memoryassets/skull.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="start" id="start">
+        <span id="btn-start">Start Game</span>
+    </div>
+    <div id="window" style=" opacity: 0">
+        <label>Enter Your Name:</label>
+        <input type="text" id="txt">
+        <input type="button" value="OK" id="btn">
+    </div>
+    <div id="str">
+        <div class="result" id="result">
+            <div id="name"></div>
+            <div id="tries"></div>
+            <input type="button" value="Restart" class="restart" style="display: none">
+        </div>
+        <div class="all-result"></div>
+        <div id="black">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </div>
+    </div>
+    <!-- instrucion -->
+    <div class="instruction">
+        <ul class="instruction-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class="comeback">
+            <li>Click Top Left Logo to Comeback (for a Coward)</li>
+        </ul>
+    </div>
 </body>
 </html>
