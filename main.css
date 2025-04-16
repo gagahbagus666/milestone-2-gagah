@@ -12,7 +12,7 @@
 body{
     background-color:rgb(18, 17, 17);
     color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Inconsolata;
 }
 
 a{
@@ -153,7 +153,6 @@ a:visited{
     font-size: 1rem;
 }
 
-/* game list section */
 #about{
     background-size: cover;
     background-color: rgb(84, 84, 72);

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../numberguessing/numberguessing.css">
+    <title>Souls Guessing</title>
+</head>
+<body>
+    <!-- header -->
+    <h1 class="logo">
+        <a href="../main.html">
+            <img src="../assets/mainlogo.png" alt="main logo">
+        </a>
+    </h1>
+    <!-- game area -->
+    <div class="container">
+        <h2>Souls Offering</h2>
+        <p>Tell us, How Many Souls You Want to Offer Between 1 and 100</p>
+        <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess">
+        <button id="guessBtn">Submit</button>
+        <p id="result"></p>
+        <p>Attempts Left: <span id="attempts">5</span></p>
+        <button id="resetBtn" style="display: none;">Reset</button>
+    </div>
+    <p id="hint"></p>
+    <p id="attempts"></p>
+    <div class="instruction">
+        <h2>Here's The Condition..</h2>
+        <p>You are currently facing another Dark Entity. before you escape this area, You need to satisfy "Him" with Souls Offering.</p>
+        <p>Imagine your enemies name and sell them to "Him" as return to your freedom, how many you will offer?</p>
+    </div>
+    <!-- footer -->
+    <footer>💀 Desperately Made by <a href="https://www.instagram.com/gahbagoes/" target="_blank">@gahbagoes</a></footer>
+    <script src="../numberguessing/numberguessing.js"></script>
+</body>
+</html>
