@@ -10,5 +10,5 @@ project about javascript mini games with gothic style. the goals are to provide 
 -   CSS
 -   Javascript
 
-#### Future Enhanchment
+#### Future Enhancement
 -   rework and fix bugs
