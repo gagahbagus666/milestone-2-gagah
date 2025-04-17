@@ -91,7 +91,7 @@ function startTimer() {
         if (seconds >= 60) {
             clearInterval(timer);
             alert("Time's up! The underworld claims your soul...");
-            startGame(); // Restart game
+            startGame();
         }
     }, 1000);
 }
