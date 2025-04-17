@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../memorygame/memory.css">
-    <script src="../memorygame/memory.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,8 +19,8 @@
     <!-- card game -->
     <div class="container">
         <h1 class="title">Memory Game</h1>
-            <div class="box-game">
-                    <div class="card" onclick="flipCard(this)">
+            <div class="game-board">
+                    <div class="card" data-id="castle" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -31,7 +30,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="castle" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -41,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="bat" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -51,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="bat" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -61,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="ghost" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -71,7 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="ghost" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -81,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="heart" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -91,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="heart" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -101,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="moth" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -111,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="moth" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -121,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="queenlich" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -131,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="queenlich" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -141,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="reaper" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -151,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="reaper" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -161,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="skull" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -171,7 +170,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" onclick="flipCard(this)">
+                    <div class="card" data-id="skull" onclick="flipCard(this)">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="../memorygame/memoryassets/back.png" alt="Card Front">
@@ -184,8 +183,7 @@
             </div>
             <div class="game-info">
                 <p id="attempts">Souls Remaining: 5</p>
-                <p id="time">Time: 00:00</p>
-                <button id="restart-btn" onclick="startGame()">Regain Soul</button>
+                <p id="timer">Time: 0s</p>
             </div>
     </div>
     <!-- instrucion -->
@@ -201,5 +199,6 @@
             <li>Click Top Left Logo to Comeback (for a Coward)</li>
         </ul>
     </div>
+    <script src="../memorygame/memory.js"></script>
 </body>
 </html>
