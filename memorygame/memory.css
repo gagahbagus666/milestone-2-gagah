@@ -108,19 +108,26 @@ header{
     border-radius: 10px;
 }
 
-.instrucion ul {
-
-    list-style: disc;
-    margin-left: 20px;
-    padding-left: 20px; 
-}
-
-.instrucion li {
-    margin-bottom: 10px;
-}
 
 .instruction{
     margin: 0 auto;
     border: 3px solid red;
     padding: 20px;
+}
+
+.instruction h2{
+    text-align: center;
+    color: maroon;
+}
+
+.instruction p{
+    text-align: center;
+    color: white;
+}
+
+footer{
+    background-color: rgb(18, 17, 17);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
 }

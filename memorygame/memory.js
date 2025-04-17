@@ -90,7 +90,7 @@ function startTimer() {
 
         if (seconds >= 60) {
             clearInterval(timer);
-            alert("Time's up! The underworld claims your soul...");
+            alert("Time's up! The Dark Entity claims your soul...");
             startGame();
         }
     }, 1000);
